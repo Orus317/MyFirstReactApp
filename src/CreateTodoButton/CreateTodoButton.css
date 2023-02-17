@@ -1,15 +1,36 @@
 .CreateTodoButton {
     width: 40px;
     height: 40px;
+    padding: 0;
     margin-top: 30px;
     border: none;
     background-color: #ADCCFA;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.CreateTodoButton p {
     color:#fafafa;
     font-size: 36px;
     font-weight: bold;
-    border-radius: 50%;
-    cursor: pointer;
+    margin: 0;
+    transition: all .1s ease-in ;
 }
 
+.CreateTodoButton p:hover {
+    transform: rotate(45deg);
+    transition: all .1s ease-in ;
+}
 
+.CreateTodoButton--hoisted {
+    margin-top: 70px;
+    z-index: 1;
+    box-shadow: 0 0 20px -1px #fff;
+}
 
+.CreateTodoButton--hoisted p{
+    transform: rotate(45deg);
+}

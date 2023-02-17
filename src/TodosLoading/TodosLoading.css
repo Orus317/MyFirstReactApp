@@ -1,0 +1,51 @@
+.LoadignTodo-container{
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 20px 20px;
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px rgb(173, 204, 250) solid; */
+    border-radius: 30px;
+}
+
+.LoadignTodo-container .LoadingTodo-text{
+    margin: 0;
+}
+
+.LoadignTodo-container span{
+    font-weight: bold;
+}
+
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoadignTodo-container,
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon{
+    background: linear-gradient(90deg, rgba(250,250,250,1), rgb(200,199,199));
+    background-size: 400% 400%;
+    animation: loadingAnimation 2s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

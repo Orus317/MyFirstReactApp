@@ -1,0 +1,10 @@
+.ModalBackground {
+    background-color: #1d1c21c7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
