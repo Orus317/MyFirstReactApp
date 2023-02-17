@@ -18,7 +18,7 @@ function useLocalStorage(itemName, initialValue) {
 				}	
 				setItem(parsedItem);
 				setLoading(false);
-			}, 100000);
+			}, 3000);
 		} catch (error) {
 			setError(error);
 		}
